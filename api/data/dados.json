@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "nome": "Ana Torre",
+      "ativo": true,
+      "email": "a@a.com",
+      "role": 1
+    },
+    {
+      "id": 2,
+      "nome": "Gabriel Costa",
+      "ativo": true,
+      "email": "g@g.com",
+      "role": 1
+    },
+    {
+      "id": 3,
+      "nome": "Flavia Lins",
+      "ativo": true,
+      "email": "f@f.com",
+      "role": 1
+    },
+    {
+      "id": 4,
+      "nome": "Tabajara",
+      "ativo": true,
+      "email": "tabajara@teste.com",
+      "role": 2
+    },
+    {
+      "id": 5,
+      "nome": "jaque",
+      "ativo": true,
+      "email": "jaque@teste.com",
+      "role": 2
+    },
+    {
+      "id": 6,
+      "nome": "Malaquias",
+      "ativo": true,
+      "email": "malaquias@teste.com",
+      "role": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "type": "Visualizador"
+    },
+    {
+      "id": 2,
+      "type": "Técnico"
+    },
+    {
+      "id": 3,
+      "type": "Administrador"
+    }
+  ]
+}
