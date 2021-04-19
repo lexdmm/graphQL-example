@@ -13,14 +13,52 @@ installar o NodeJS
 ```sh
 npm install
 ```
-2 - Na sequência suba os serviços
+2 - Dependências - Como o GraphQL é uma especificação, para funcionar ele precisa de algumas ferramentas:
+- apollo-server: ajuda a instanciar as querys SDL para uma instancia onde eu posso interagir com elas.
+
+## Executando
+1 - Na sequência suba os serviços
 ```sh
 npx json-server --watch api/data/dados.json
 ```
-3 - Resources
+2 - Resources
 ```sh
 http://localhost:3000/users
 http://localhost:3000/roles
 ```
-4 - Dependências - Como o GraphQL é uma especificação, para funcionar ele precisa de algumas ferramentas:
-- apollo-server: ajuda a instanciar minhas querys SDL (queries graphQL) para uma instancia onde onde eu posso interagir com elas.
+3 - Suba o projeto graphql
+```sh
+npm start
+```
+Vai subir na porta 4000 que é padrão do graphql, veja que ao acessar a url no browser o playground do graphql ficará disponível. Ali poderá consultar sua query e ver a documentação delas.
+http://localhost:4000/
+
+
+4 - Depois execute o comando abaixo para ver todos os types definidos na API
+```sh
+query {
+    __schema {
+        types {
+            name
+            kind
+            fields {
+                name
+            }
+        }
+    }
+}
+```
+
+ou o ponto de entrada da API
+```sh
+{
+    __schema {
+        queryType {
+            name
+        }
+    }
+}
+```
+
+
+

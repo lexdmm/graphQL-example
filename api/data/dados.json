@@ -2,23 +2,23 @@
   "users": [
     {
       "id": 2,
-      "nome": "Ana Torre",
+      "nome": "Bono",
       "ativo": true,
-      "email": "a@a.com",
+      "email": "bono@teste.com",
       "role": 1
     },
     {
       "id": 2,
-      "nome": "Gabriel Costa",
+      "nome": "Vanessa",
       "ativo": true,
-      "email": "g@g.com",
+      "email": "vanessa@teste.com",
       "role": 1
     },
     {
       "id": 3,
-      "nome": "Flavia Lins",
+      "nome": "joãozinho",
       "ativo": true,
-      "email": "f@f.com",
+      "email": "joao@teste.com",
       "role": 1
     },
     {
