@@ -41,24 +41,6 @@
       "ativo": true,
       "email": "malaquias@teste.com",
       "role": 2
-    },
-    {
-      "nome": "Maria",
-      "ativo": true,
-      "email": "maria@teste.com.br",
-      "id": 7
-    },
-    {
-      "nome": "Maria",
-      "ativo": true,
-      "email": "maria@teste.com.br",
-      "id": 8
-    },
-    {
-      "nome": "Jóca",
-      "ativo": true,
-      "email": "joca@teste.com.br",
-      "id": 9
     }
   ],
   "roles": [
