@@ -5,11 +5,17 @@ const userSchema = gql `
     nome: String!
     ativo: Boolean!
     email: String!
+    role: Role!
+  }
+
+  type Role {
+    id: ID!
+    type: string!
   }
 
   type Query {
-    users: [User]!
-    primeiroUser: User
+    users: [User]
+    iserId: (id: ID!): User!
   }
 
 `
