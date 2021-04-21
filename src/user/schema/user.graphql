@@ -14,7 +14,14 @@ const userSchema = gql `
 
   type Role {
     id: ID!
-    type: String!
+    type: RolesType!
+  }
+
+  enum RolesType {
+    Visualizador
+    Tecnico
+    Administrador
+    Mecanico
   }
 
   type Query {
@@ -23,8 +30,8 @@ const userSchema = gql `
   }
 
   type Mutation {
-    addUser (nome: String!, ativo: Boolean!, email: String, role: String!, createAt: DateTime, updateAt: DateTime): User!
-    updateUser (id: ID!, nome: String!, ativo: Boolean!, email: String, role: String!, updateAt: DateTime): User!
+    addUser (nome: String!, ativo: Boolean!, email: String, role: RolesType!, createAt: DateTime, updateAt: DateTime): User!
+    updateUser (id: ID!, nome: String!, ativo: Boolean!, email: String, role: RolesType!, updateAt: DateTime): User!
     deleteUser (id: ID!): ID!
   }
 `

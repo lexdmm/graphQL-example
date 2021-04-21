@@ -8,6 +8,12 @@ const userResolvers = {
     parseValue: (value) => new Date(value),
     parseLiteral: (literal) => new Date(literal.value)
   }),
+  RolesType: {
+    Visualizador: "Visualizador",
+    Tecnico: "Tecnico",
+    Administrador: "Administrador",
+    Mecanico: "Mecanico"
+  },
   Query: {
     users: (root, args, { dataSources }) => dataSources.usersAPI.getUsers(),
     user: (root, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
