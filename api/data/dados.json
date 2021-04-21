@@ -43,11 +43,21 @@
       "role": 2
     },
     {
-      "nome": "Jóquinha",
+      "id": 7,
+      "nome": "José",
       "ativo": true,
-      "email": "joquinha@teste.com.br",
+      "email": "jose@teste.com.br",
       "role": 1,
-      "id": 7
+      "updateAt": "2021-04-22T00:00:00.000Z"
+    },
+    {
+      "nome": "Chiquinho",
+      "ativo": true,
+      "email": "chiqueira@teste.com.br",
+      "role": 1,
+      "createAt": "2021-04-21T00:00:00.000Z",
+      "updateAt": "2021-04-21T00:00:00.000Z",
+      "id": 8
     }
   ],
   "roles": [
