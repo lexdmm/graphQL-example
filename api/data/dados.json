@@ -25,8 +25,9 @@
       "id": 4,
       "nome": "Tabajara",
       "ativo": true,
-      "email": "tabajara@teste.com",
-      "role": 3
+      "email": "tabajara@teste.com.br",
+      "role": 4,
+      "updateAt": "2021-04-22T00:00:00.000Z"
     },
     {
       "id": 5,
@@ -47,7 +48,7 @@
       "nome": "José",
       "ativo": true,
       "email": "jose@teste.com.br",
-      "role": 1,
+      "role": 4,
       "updateAt": "2021-04-22T00:00:00.000Z"
     },
     {
@@ -67,11 +68,15 @@
     },
     {
       "id": 2,
-      "type": "Técnico"
+      "type": "Tecnico"
     },
     {
       "id": 3,
       "type": "Administrador"
+    },
+    {
+      "id": 4,
+      "type": "Mecanico"
     }
   ]
 }

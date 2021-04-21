@@ -16,26 +16,31 @@ npm install
 2 - Dependências - Como o GraphQL é uma especificação, para funcionar ele precisa de algumas ferramentas:
 - apollo-server: ajuda a instanciar as querys SDL para uma instancia onde eu posso interagir com elas.
 
-## Executando
-1 - Na sequência suba os serviços
+## Executando 
+1 - Para subir apenas o json-server
 ```sh
 npx json-server --watch api/data/dados.json
 ```
 
-2 - Resources
+- Resources
 ```sh
 http://localhost:3000/users
 http://localhost:3000/roles
 ```
 
-3 - Suba o projeto graphql
+2 - Suba o projeto graphql
 ```sh
-npm start
+npm run dev
 ```
 Vai subir na porta 4000 que é padrão do graphql, veja que ao acessar a url no browser o playground do graphql ficará disponível. Ali poderá consultar sua query e ver a documentação delas.
 http://localhost:4000/
 
-4 - Depois execute o comando abaixo para ver todos os types definidos na API
+3 - Para subir tudo ao mesmo tempo
+```sh
+npm start
+```
+
+5 - Depois execute o comando abaixo para ver todos os types definidos na API
 ```sh
 query {
     __schema {
