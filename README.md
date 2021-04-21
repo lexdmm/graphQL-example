@@ -88,3 +88,74 @@ type Query {
     users: [User!]!
 }
 ```
+## Para testar no playground
+Pesquisar registros
+```sh
+query {
+  user (id: 6) {
+    nome
+    email
+    createAt
+    updateAt
+    role {
+      type
+    }
+  }
+}
+```
+
+Inserir dados
+```sh
+mutation {
+  addUser (    
+    user: {
+      nome: "Menes", 
+      ativo: true, 
+      email: "menes@teste.com.br", 
+      role: Mecanico,
+      createAt: "2021-04-21",
+      updateAt: "2021-04-21"
+    }
+  ) {
+    nome
+    email
+    role {
+      type
+    }
+    createAt
+    updateAt
+  }
+}
+```
+
+Alterar dados
+```sh
+mutation {
+  updateUser (
+    id: 4,
+    user: {     
+      nome: "Tabajara", 
+      ativo: true, 
+      email: "tabajara@teste.com.br", 
+      role: Mecanico, 
+      updateAt: "2021-04-22"
+    }
+  ) {
+    code
+    message
+    updatedUser {
+      nome
+    }
+  }
+}
+```
+
+Deletar dados
+```sh
+mutation {
+  deleteUser (id: 10) {
+    code
+    message
+  }
+}
+```
