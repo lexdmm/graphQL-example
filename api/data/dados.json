@@ -41,6 +41,13 @@
       "ativo": true,
       "email": "malaquias@teste.com",
       "role": 2
+    },
+    {
+      "nome": "Jóquinha",
+      "ativo": true,
+      "email": "joquinha@teste.com.br",
+      "role": 1,
+      "id": 7
     }
   ],
   "roles": [
