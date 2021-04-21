@@ -12,11 +12,20 @@ const userSchema = gql `
     updateAt: DateTime
   }
 
-  input UserInput {
+  input UpdateUserInput {
     nome: String
     ativo: Boolean
     email: String
     role: RolesType
+    updateAt: DateTime
+  }
+
+  input AddUserInput {
+    nome: String
+    ativo: Boolean
+    email: String
+    role: RolesType
+    createAt: DateTime
     updateAt: DateTime
   }
 
@@ -38,8 +47,8 @@ const userSchema = gql `
   }
 
   type Mutation {
-    addUser (user: UserInput, createAt: DateTime): User!
-    updateUser (id: ID!, user: UserInput): updateUserMessage!
+    addUser (user: AddUserInput): User!
+    updateUser (id: ID!, user: UpdateUserInput): updateUserMessage!
     deleteUser (id: ID!): deleteUserMessage!
   }
 
@@ -56,6 +65,7 @@ const userSchema = gql `
   type updateUserMessage implements responseMessage {
     code: Int!
     message: String!
+    updatedUser: User!
   }
 `
 

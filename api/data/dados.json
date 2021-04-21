@@ -22,12 +22,12 @@
       "role": 1
     },
     {
-      "id": 4,
       "nome": "Tabajara",
       "ativo": true,
       "email": "tabajara@teste.com.br",
       "role": 4,
-      "updateAt": "2021-04-22T00:00:00.000Z"
+      "updateAt": "2021-04-22T00:00:00.000Z",
+      "id": 4
     },
     {
       "id": 5,
@@ -52,10 +52,10 @@
       "updateAt": "2021-04-22T00:00:00.000Z"
     },
     {
-      "nome": "Chiquinho",
+      "nome": "Juca Bala",
       "ativo": true,
-      "email": "chiqueira@teste.com.br",
-      "role": 1,
+      "email": "juca@teste.com.br",
+      "role": 4,
       "createAt": "2021-04-21T00:00:00.000Z",
       "updateAt": "2021-04-21T00:00:00.000Z",
       "id": 8

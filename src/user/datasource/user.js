@@ -6,7 +6,7 @@ class UsersAPI extends RESTDataSource {
     this.baseURL = 'http://localhost:3000'
     this.responseMessage = {
       code: 201,
-      mensagem: "operação feita com sucesso"
+      message: "operação feita com sucesso"
     }
   }
 
@@ -44,8 +44,7 @@ class UsersAPI extends RESTDataSource {
     const role = await this.get(`roles?type=${updUser.user.role}`)
     await this.put(`users/${updUser.id}`, {...updUser.user, role: role[0].id })
     return ({
-      ...this.responseMessage,
-      updatedUser: {
+      ...this.responseMessage, updatedUser: {
         ...updUser.user,
         role: role[0]
       }
